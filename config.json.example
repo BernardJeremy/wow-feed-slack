@@ -1,0 +1,14 @@
+{
+	"watch":
+	[
+		{
+			"name": "characterName",
+			"realm": "realm",
+			"region": "region"
+		}
+	],
+	"lang": "en",
+	"hostname": "http://%r%.battle.net",
+	"path": "/wow/%l%/character/%s%/%c%/feed",
+	"slackHookUrl" : "https://hooks.slack.com/services/...."
+}

@@ -1,0 +1,31 @@
+{
+  "name": "wow-feed-slack",
+  "version": "2.1.0",
+  "description": "NodeJS script allowing to send WoW feed info to Slack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardJeremy/wow-feed-slack.git"
+  },
+  "author": "BernardJeremy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardJeremy/wow-feed-slack/issues"
+  },
+  "homepage": "https://github.com/BernardJeremy/wow-feed-slack#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "https": "^1.0.0",
+    "slack-node": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}
