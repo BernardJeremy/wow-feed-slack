@@ -10,7 +10,10 @@ function handleText(item) {
 
 function handleTag(item, baseUrl) {
   if (item.name === 'a' && item.children && item.children.length && item.children.length > 0 && item.children[0].data && sanitize(item.children[0].data) !== '') {
-    const link = (item.attribs.href[0] === '/' ? url.parse(baseUrl).hostname + item.attribs.href : url.resolve(baseUrl, item.attribs.href));
+    let link = (item.attribs.href[0] === '/' ? url.parse(baseUrl).hostname + item.attribs.href : url.resolve(baseUrl, item.attribs.href));
+    if (link.indexOf('http://') === -1) {
+      link = 'http://' + link;
+    }
     return `<${link}|${sanitize(item.children[0].data)}>`;
   } else if (item.name === 'strong') {
     return sanitize(`*${item.children[0].data}*`);
